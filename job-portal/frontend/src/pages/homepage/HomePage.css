@@ -1,0 +1,100 @@
+/* Container Setup */
+.hm-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Header Styling */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.home-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.home-nav ul li {
+  display: inline;
+}
+
+.home-nav ul li a {
+  text-decoration: none;
+  color: #0073b1;
+  font-weight: bold;
+}
+
+/* Main Content Styling */
+.home-content {
+  margin-bottom: 2rem;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Buttons Styling */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00796b, #48a999); /* Teal gradient */
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #005f56, #3b8c7c); /* Darker teal on hover */
+}
+
+/* Illustration Section */
+.illustration img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+  .home-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .home-content {
+    flex: 1;
+  }
+  
+  .illustration {
+    flex: 1;
+  }
+}
